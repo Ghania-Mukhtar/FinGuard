@@ -134,32 +134,44 @@ The application includes secure login authentication, receipt image handling, cl
 # **Project Structure**
 
 ```bash
-ExpenseFlow/
-│
-├── frontend/
-│   ├── components/
-│   │   ├── widgets.py
-│   │   └── image_viewer.py
-│   │
-│   ├── pages/
-│   │   ├── login.py
-│   │   ├── admin_dashboard.py
-│   │   ├── manager_dashboard.py
-│   │   └── employee_dashboard.py
-│   │
-│   └── theme.py
-│
-├── services/
-│   ├── admin.py
-│   ├── manager.py
-│   ├── employee.py
-│   └── auth.py
+expense_system/
 │
 ├── backup/
 │   └── sync.py
 │
-├── app.py
-└── README.md
+├── db/
+│   ├──__init__.py
+│   ├── firebase.py
+│   └── postgres.py
+│
+├── frontend/
+│   ├── components/
+│   │   ├── __init__.py
+│   │   ├── image_viewer.py
+│   │   └── widgets.py
+│   │
+│   ├── pages/
+│   │   ├── __init__.py
+│   │   ├── admin_dashboard.py
+│   │   ├── manager_dashboard.py
+│   │   ├── employee_dashboard.py
+│   │   └── login.py
+│   │
+│   └── theme.py
+│
+├── services/
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── auth.py
+│   ├── employee.py
+│   └── manager.py
+│
+├── storage/
+│   ├── __init__.py
+│   └── media.py
+│
+├── main.py
+```
 ```
 
 ---
